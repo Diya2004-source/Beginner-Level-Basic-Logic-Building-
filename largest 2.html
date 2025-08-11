@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Find largest number among 2 numbers</title>
+</head>
+<body>
+    <p id="message"></p>
+    <script>
+        let num1 = prompt("Enter value for number 1:")
+        let num2 = prompt("Enter value for number 2:")
+        num1 = parseInt(num1)
+        num2 = parseInt(num2)
+        if(num1>num2)
+            document.getElementById("message").innerHTML = "num1 is largest";
+        else
+            document.getElementById("message").innerHTML = "num2 is largest";
+    </script>
+</body>
+</html>

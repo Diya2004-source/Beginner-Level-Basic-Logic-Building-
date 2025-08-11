@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+</head>
+
+<body>
+    <script>
+        console.log("We are gonna perform calculations");
+        let num1 = prompt("Enter number1:");
+        let num2 = prompt("Enter number2:")
+        // convert string to number
+        num1 = parseInt(num1);
+        num2 = parseInt(num2);
+        let operator = prompt("Enter operator (+,-,*,/):");
+        let result;
+        // perform calculations based on inputs
+        if (operator == "+")
+            result = num1 + num2;
+        else if (operator == "-")
+            result = num1 - num2;
+        else if (operator == "*")
+            result = num1 * num2;
+        else if (operator == "/") {
+            if (num2 !== 0)
+                result = num1 / num2;
+            else
+                result = "error division by zero";
+        }
+        else
+            result = "invalid operator!";
+
+        //to display output
+        alert("Result:" + result);
+    </script>
+</body>
+
+</html>
